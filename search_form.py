@@ -29,20 +29,24 @@ class Search(QMainWindow):
         self.tokenization_check_box = QCheckBox("Токенизация", self)
         self.tokenization_check_box.setFixedWidth(200)
         self.tokenization_check_box.move(50, 40)
+        self.tokenization_check_box.setVisible(False)
 
         self.normalization_check_box = QCheckBox("Нормализация", self)
         self.normalization_check_box.setFixedWidth(200)
         self.normalization_check_box.setEnabled(False)
         self.normalization_check_box.move(50, 60)
+        self.normalization_check_box.setVisible(False)
 
         self.morph_check_box = QCheckBox("Морфологиялық талдау", self)
         self.morph_check_box.setFixedWidth(200)
         self.morph_check_box.setEnabled(False)
         self.morph_check_box.move(50, 80)
+        self.morph_check_box.setVisible(False)
 
         self.search_button = QPushButton("Іздеу", self)
         self.search_button.setToolTip("Іздеу")
-        self.search_button.move(150, 120)
+        # self.search_button.move(150, 120)
+        self.search_button.move(150, 90)
         self.search_button.clicked.connect(self.search_button_click)
 
         self.result_field = QPlainTextEdit("Нәтижелер шығатын орны", self)
