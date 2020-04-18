@@ -12,6 +12,10 @@ mypy = "*"
 [packages]
 pyqt5 = "*"
 sacremoses = "*"
+python-levenshtein = "*"
+fasttext = "*"
+numpy = "*"
+sklearn = "*"
 
 [requires]
 python_version = "3.8"
