@@ -6,13 +6,14 @@ verify_ssl = true
 [dev-packages]
 black = "*"
 tqdm = "*"
+flake8 = "*"
 
 [packages]
 pyqt5 = "*"
 sacremoses = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.8"
 
 [pipenv]
 allow_prereleases = true
